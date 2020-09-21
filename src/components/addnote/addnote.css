@@ -1,0 +1,45 @@
+/*-------------------------------
+--------- Add Note Form ---------
+--------------------------------*/
+.form--note {
+  background: #fefefe;
+  border: 1px solid #b9b9b9;
+  border-radius: 5px;
+  max-width: 425px;
+  padding: 12px;
+  position: relative;
+  margin-bottom: 57px;
+}
+
+/*-------------------------------
+-------- Title Input Aea --------
+--------------------------------*/
+.input--title::placeholder {
+  font-weight: 700;
+}
+
+.input--title {
+  border: none;
+  width: 50%;
+  margin-bottom: 8px;
+  font-family: inherit;
+}
+
+/*-------------------------------
+--------- Note Text Area --------
+--------------------------------*/
+textarea {
+  width: 50%;
+  border: none;
+  resize: none;
+  font-family: inherit;
+}
+
+/*-------------------------------
+--------- Button Styles ---------
+--------------------------------*/
+.button--add {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+}

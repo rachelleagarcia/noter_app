@@ -6,11 +6,11 @@
 
 ### About Noter
 
-Noter is a project where I created a fully responsive note-taking application built in React. It gives users the ability to create and organize notes through additional tags and categories.
+Noter is a project where I created a note-taking application that gives users the ability to create notes and organize them using tags and categories.
 
 ### Purpose
 
-To create a note-taking application that would replicate the use of sticky notes, therefore eliminating paper waste.
+To create a note-taking application built in React that would replicate sticky notes, eliminating paper waste.
 
 ### Tools and Technologies
 
