@@ -1,6 +1,6 @@
 # Noter Application
 
-## Noter Preview
+### Noter Preview
 
 ![Noter Application](https://github.com/rachelleagarcia/note_app/blob/master/public/images/Noter.png?raw=true 'Noter Application Preview')
 
