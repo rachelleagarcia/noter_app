@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import SelectCategory from '../selectcategory/SelectCategory';
 import './addnote.css';
 
 function AddNote(props) {
@@ -43,6 +44,7 @@ function AddNote(props) {
           value={note.content}
           placeholder="Note Content"
         />
+        <SelectCategory />
         <button className="button--add" onClick={submitNote}>
           Add
         </button>

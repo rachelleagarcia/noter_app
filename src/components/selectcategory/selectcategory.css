@@ -1,0 +1,15 @@
+/*-------------------------------
+---- Select Category Styles -----
+--------------------------------*/
+.select-category {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+.select-category--button {
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
