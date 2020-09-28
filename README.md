@@ -2,7 +2,7 @@
 
 ### Noter Preview
 
-![Noter Application](https://github.com/rachelleagarcia/note_app/blob/master/public/images/Noter.png?raw=true 'Noter Application Preview')
+![Noter Application](https://github.com/rachelleagarcia/noter_app/blob/master/public/images/NoterApp.png?raw=true 'Noter Application Preview')
 
 ### About Noter
 
