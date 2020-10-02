@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import SelectCategory from '../selectcategory/SelectCategory';
-import SelectTags from '../selecttags/SelectTags';
 import arrow from './images/right-arrow.png';
 import './addnote.css';
 
@@ -26,6 +25,7 @@ function AddNote(props) {
     setNote({
       title: '',
       content: '',
+      tags: '',
     });
     event.preventDefault();
   }
@@ -47,7 +47,13 @@ function AddNote(props) {
           placeholder="Note Content..."
         />
         <SelectCategory />
-        <SelectTags />
+        <textarea
+          className="text-area--tags"
+          name="tags"
+          onChange={handleChange}
+          value={note.tags}
+          placeholder="#tags"
+        />
         <button className="button--add" onClick={submitNote}>
           <img src={arrow} alt="submit button" className="button--submit" />
         </button>

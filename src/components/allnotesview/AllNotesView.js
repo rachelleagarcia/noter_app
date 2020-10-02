@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import NoteCard from '../notecard/NoteCard';
 import AddNote from '../addnote/AddNote';
+import './allnotesview.css';
 
 function AllNotesView() {
   const [notes, setNotes] = useState([]);
@@ -14,16 +15,19 @@ function AllNotesView() {
   return (
     <div className="main-area">
       <AddNote onAdd={addNote} />
-      {notes.map((noteItem, index) => {
-        return (
-          <NoteCard
-            key={index}
-            id={index}
-            title={noteItem.title}
-            content={noteItem.content}
-          />
-        );
-      })}
+      <div className="note-area">
+        {notes.map((noteItem, index) => {
+          return (
+            <NoteCard
+              key={index}
+              id={index}
+              title={noteItem.title}
+              content={noteItem.content}
+              tags={noteItem.tags}
+            />
+          );
+        })}
+      </div>
     </div>
   );
 }

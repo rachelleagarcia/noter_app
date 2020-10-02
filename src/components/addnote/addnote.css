@@ -13,7 +13,7 @@
 }
 
 /*-------------------------------
--------- Title Input Aea --------
+------- Text Input Styles -------
 --------------------------------*/
 .input--title {
   border: none;
@@ -21,6 +21,16 @@
   margin-bottom: 8px;
   font-family: inherit;
   font-weight: 700;
+}
+
+.text-area--tags {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  height: 12px;
+  line-height: 100%;
+  resize: horizontal;
+  resize: none;
 }
 
 /*-------------------------------

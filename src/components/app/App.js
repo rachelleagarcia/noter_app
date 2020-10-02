@@ -5,7 +5,6 @@ import AllNotesView from './../allnotesview/AllNotesView';
 import CategoriesView from './../categoriesview/CategoriesView';
 import Tags from '../tags/TagsView';
 import CompletedView from '../completedview/CompletedView';
-import './app.css';
 
 function App() {
   return (
