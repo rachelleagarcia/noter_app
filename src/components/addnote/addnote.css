@@ -15,15 +15,12 @@
 /*-------------------------------
 -------- Title Input Aea --------
 --------------------------------*/
-.input--title::placeholder {
-  font-weight: 700;
-}
-
 .input--title {
   border: none;
   width: 50%;
   margin-bottom: 8px;
   font-family: inherit;
+  font-weight: 700;
 }
 
 /*-------------------------------
@@ -43,4 +40,10 @@ textarea {
   position: absolute;
   bottom: 12px;
   right: 12px;
+  background: none;
+  border: none;
+}
+
+.button--submit {
+  width: 14px;
 }

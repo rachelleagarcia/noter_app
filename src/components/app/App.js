@@ -1,10 +1,10 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Header from '../header/Header';
-import AllNotes from '../allnotes/AllNotesView';
-import Categories from '../categories/CategoriesView';
+import AllNotesView from './../allnotesview/AllNotesView';
+import CategoriesView from './../categoriesview/CategoriesView';
 import Tags from '../tags/TagsView';
-import CompletedView from '../completed/CompletedView';
+import CompletedView from '../completedview/CompletedView';
 import './app.css';
 
 function App() {
@@ -14,10 +14,10 @@ function App() {
         <Header />
         <Switch>
           <Route exact path="/">
-            <AllNotes />
+            <AllNotesView />
           </Route>
           <Route path="/categories">
-            <Categories />
+            <CategoriesView />
           </Route>
           <Route path="/tags">
             <Tags />

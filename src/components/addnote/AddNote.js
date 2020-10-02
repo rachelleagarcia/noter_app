@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import SelectCategory from '../selectcategory/SelectCategory';
+import SelectTags from '../selecttags/SelectTags';
+import arrow from './images/right-arrow.png';
 import './addnote.css';
 
 function AddNote(props) {
@@ -42,11 +44,12 @@ function AddNote(props) {
           name="content"
           onChange={handleChange}
           value={note.content}
-          placeholder="Note Content"
+          placeholder="Note Content..."
         />
         <SelectCategory />
+        <SelectTags />
         <button className="button--add" onClick={submitNote}>
-          Add
+          <img src={arrow} alt="submit button" className="button--submit" />
         </button>
       </form>
     </div>
