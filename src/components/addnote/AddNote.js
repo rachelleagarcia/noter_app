@@ -7,6 +7,7 @@ function AddNote(props) {
   const [note, setNote] = useState({
     title: '',
     content: '',
+    tags: '',
   });
 
   function handleChange(event) {

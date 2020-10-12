@@ -5,6 +5,7 @@ import './notecard.css';
 
 function NoteCard(props) {
   let date = moment().format('MMMM Do, YYYY');
+  let time = moment().startOf('hour').fromNow();
 
   return (
     <div className="note-card">
@@ -17,6 +18,7 @@ function NoteCard(props) {
         <NoteCategory />
         <p className="note-content--text">{props.content}</p>
         <span className="note-content--tags">{props.tags}</span>
+        <span className="note-content-time">{time}</span>
       </div>
     </div>
   );

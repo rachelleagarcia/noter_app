@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './navbar.css';
 
-function Navbar() {
+function Navbar(props) {
   return (
     <div className="navbar-area">
       <ul className="navbar-links">
@@ -37,6 +37,7 @@ function Navbar() {
         <li className="navbar-item">
           <div className="navbar-tags">
             <h2 className="navbar-subtitle">Tags</h2>
+            <span className="note-content--tags">{props.tags}</span>
           </div>
         </li>
         <li className="navbar-item">
