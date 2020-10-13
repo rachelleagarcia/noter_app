@@ -2,12 +2,12 @@
 ------------ Note Card ----------
 --------------------------------*/
 .note-card {
+  position: relative;
   background: #fefefe;
   width: 257px;
   height: 226px;
   border-radius: 30px;
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.05);
-  position: relative;
   margin: 0 20px 20px 0;
 }
 
@@ -38,8 +38,8 @@
 ---------- Note Content ---------
 --------------------------------*/
 .note-content {
-  padding: 24px;
   position: relative;
+  padding: 24px;
   height: 100%;
 }
 
@@ -49,23 +49,40 @@
   margin-left: 30px;
 }
 
-.note-content--tags {
-  font-size: 0.75rem;
+.note-content--category {
   position: absolute;
+  width: 74px;
+  height: 8px;
+  right: 0;
+  background-color: #c1292e;
+}
+
+.note-content--tags {
+  position: absolute;
+  font-size: 0.75rem;
+  color: #898989;
   bottom: 70px;
   left: 24px;
-  color: #898989;
 }
 
 .note-content-time {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  font-size: 0.75rem;
   background-color: #e7e7e7;
   border: 1px solid #c4c4c4;
-  font-size: 0.75rem;
-  position: absolute;
+  border-radius: 40px;
   bottom: 65px;
   right: 24px;
   padding: 4px 8px;
-  border-radius: 40px;
+}
+
+.icon--time {
+  width: 16px;
+  height: auto;
+  display: inline;
+  margin-right: 4px;
 }
 
 /*-------------------------------

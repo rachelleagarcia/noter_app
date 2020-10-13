@@ -2,45 +2,42 @@
 --------- Add Note Form ---------
 --------------------------------*/
 .form--note {
+  position: relative;
   background: #fefefe;
   border: 1px solid #b9b9b9;
   border-radius: 5px;
   max-width: 425px;
   padding: 12px;
-  position: relative;
   margin-bottom: 57px;
-  height: 103px;
 }
 
 /*-------------------------------
 ------- Text Input Styles -------
 --------------------------------*/
 .input--title {
+  font-family: inherit;
+  font-weight: 700;
   border: none;
   width: 50%;
   margin-bottom: 8px;
-  font-family: inherit;
-  font-weight: 700;
 }
 
-.text-area--tags {
+.input--content {
+  font-family: inherit;
+  border: none;
+  width: 100%;
+  margin-bottom: 48px;
+}
+
+.input--tags {
   position: absolute;
+  font-family: inherit;
+  line-height: 100%;
+  border: none;
   bottom: 12px;
   left: 12px;
   height: 12px;
-  line-height: 100%;
-  resize: horizontal;
-  resize: none;
-}
-
-/*-------------------------------
---------- Note Text Area --------
---------------------------------*/
-textarea {
-  width: 50%;
-  border: none;
-  resize: none;
-  font-family: inherit;
+  padding-bottom: 4px;
 }
 
 /*-------------------------------
@@ -48,12 +45,25 @@ textarea {
 --------------------------------*/
 .button--add {
   position: absolute;
-  bottom: 12px;
-  right: 12px;
   background: none;
   border: none;
+  bottom: 12px;
+  right: 12px;
 }
 
 .button--submit {
   width: 14px;
+}
+
+/*-------------------------------
+--------- Category Styles ---------
+--------------------------------*/
+.select-category {
+  position: absolute;
+  top: 14px;
+  right: 18px;
+}
+
+.select-category--button {
+  margin-left: 12px;
 }

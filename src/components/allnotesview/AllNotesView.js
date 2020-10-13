@@ -12,6 +12,14 @@ function AllNotesView() {
     });
   }
 
+  function deleteNote(id) {
+    setNotes((prevNotes) => {
+      return prevNotes.filter((noteItem, index) => {
+        return index !== id;
+      });
+    });
+  }
+
   return (
     <div className="main-area">
       <AddNote onAdd={addNote} />
@@ -23,7 +31,9 @@ function AllNotesView() {
               id={index}
               title={noteItem.title}
               content={noteItem.content}
+              category={noteItem.category}
               tags={noteItem.tags}
+              onDelete={deleteNote}
             />
           );
         })}

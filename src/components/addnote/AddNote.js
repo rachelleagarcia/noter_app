@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import SelectCategory from '../selectcategory/SelectCategory';
 import arrow from './images/right-arrow.png';
 import './addnote.css';
 
@@ -8,6 +7,7 @@ function AddNote(props) {
     title: '',
     content: '',
     tags: '',
+    category: '',
   });
 
   function handleChange(event) {
@@ -27,13 +27,14 @@ function AddNote(props) {
       title: '',
       content: '',
       tags: '',
+      category: '',
     });
     event.preventDefault();
   }
 
   return (
     <div>
-      <form className="form--note">
+      <form className="form--note" onSubmit={submitNote}>
         <input
           className="input--title"
           name="title"
@@ -41,21 +42,51 @@ function AddNote(props) {
           value={note.title}
           placeholder="Title"
         />
-        <textarea
+        <input
+          className="input--content"
           name="content"
           onChange={handleChange}
           value={note.content}
           placeholder="Note Content..."
         />
-        <SelectCategory />
-        <textarea
-          className="text-area--tags"
+        <div className="select-category">
+          <input
+            type="radio"
+            name="category"
+            onChange={handleChange}
+            className="select-category--button"
+            value="work"
+          ></input>
+          <input
+            type="radio"
+            name="category"
+            onChange={handleChange}
+            className="select-category--button"
+            value="personal"
+          ></input>
+          <input
+            type="radio"
+            name="category"
+            onChange={handleChange}
+            className="select-category--button"
+            value="school"
+          ></input>
+          <input
+            type="radio"
+            name="category"
+            onChange={handleChange}
+            className="select-category--button"
+            value="holiday"
+          ></input>
+        </div>
+        <input
+          className="input--tags"
           name="tags"
           onChange={handleChange}
           value={note.tags}
           placeholder="#tags"
         />
-        <button className="button--add" onClick={submitNote}>
+        <button className="button--add" type="submit">
           <img src={arrow} alt="submit button" className="button--submit" />
         </button>
       </form>

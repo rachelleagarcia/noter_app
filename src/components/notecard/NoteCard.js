@@ -1,24 +1,35 @@
 import React from 'react';
-import NoteCategory from '../notecategory/NoteCategory';
 import moment from 'moment';
+import icon from './images/time.png';
 import './notecard.css';
 
 function NoteCard(props) {
   let date = moment().format('MMMM Do, YYYY');
-  let time = moment().startOf('hour').fromNow();
+  let time = moment.duration().days();
+
+  function handleClick() {
+    props.onDelete(props.id);
+  }
 
   return (
     <div className="note-card">
       <div className="note-content">
         <div className="note-header">
-          <input className="button--completed" type="radio"></input>
+          <input
+            className="button--completed"
+            type="checkbox"
+            onClick={handleClick}
+          ></input>
           <h2 className="note--title">{props.title}</h2>
           <span className="date">{date}</span>
         </div>
-        <NoteCategory />
+        <div className="note-content--category">{props.category}</div>
         <p className="note-content--text">{props.content}</p>
         <span className="note-content--tags">{props.tags}</span>
-        <span className="note-content-time">{time}</span>
+        <span className="note-content-time">
+          <img className="icon--time" src={icon} alt="time icon"></img>
+          {time} days
+        </span>
       </div>
     </div>
   );

@@ -40,11 +40,6 @@ function Navbar(props) {
             <span className="note-content--tags">{props.tags}</span>
           </div>
         </li>
-        <li className="navbar-item">
-          <Link className="navbar-links--main" to="/completed">
-            Completed
-          </Link>
-        </li>
       </ul>
     </div>
   );

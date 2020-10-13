@@ -4,7 +4,6 @@ import Header from '../header/Header';
 import AllNotesView from './../allnotesview/AllNotesView';
 import CategoriesView from './../categoriesview/CategoriesView';
 import Tags from '../tags/TagsView';
-import CompletedView from '../completedview/CompletedView';
 
 function App() {
   return (
@@ -20,9 +19,6 @@ function App() {
           </Route>
           <Route path="/tags">
             <Tags />
-          </Route>
-          <Route path="/completed">
-            <CompletedView />
           </Route>
         </Switch>
       </Router>

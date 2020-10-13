@@ -2,12 +2,12 @@
 --------- Add Note Area ---------
 --------------------------------*/
 .main-area {
-  margin-left: 237px;
-  padding: 44px;
   position: relative;
-  height: calc(100vh - 310px);
   display: flex;
   flex-direction: column;
+  height: calc(100vh - 310px);
+  margin-left: 237px;
+  padding: 44px;
 }
 
 /*-------------------------------
