@@ -6,7 +6,7 @@
   background: #fefefe;
   border: 1px solid #b9b9b9;
   border-radius: 5px;
-  max-width: 425px;
+  max-width: 500px;
   padding: 12px;
   margin-bottom: 57px;
 }
@@ -18,8 +18,8 @@
   font-family: inherit;
   font-weight: 700;
   border: none;
-  width: 50%;
-  margin-bottom: 8px;
+  width: 80%;
+  margin-bottom: 16px;
 }
 
 .input--content {
@@ -43,6 +43,7 @@
 /*-------------------------------
 --------- Button Styles ---------
 --------------------------------*/
+/* General Buttons  */
 .button--add {
   position: absolute;
   background: none;
@@ -60,10 +61,17 @@
 --------------------------------*/
 .select-category {
   position: absolute;
-  top: 14px;
-  right: 18px;
+  top: 12px;
+  right: 0;
 }
 
 .select-category--button {
-  margin-left: 12px;
+  margin-right: 4px;
+}
+
+label {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.75rem;
+  margin-right: 16px;
 }

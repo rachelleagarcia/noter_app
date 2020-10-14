@@ -23,7 +23,7 @@ function NoteCard(props) {
           <h2 className="note--title">{props.title}</h2>
           <span className="date">{date}</span>
         </div>
-        <div className="note-content--category">{props.category}</div>
+        <div className={`note-content--category note--${props.category}`}></div>
         <p className="note-content--text">{props.content}</p>
         <span className="note-content--tags">{props.tags}</span>
         <span className="note-content-time">

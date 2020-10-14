@@ -6,11 +6,10 @@ function AddNote(props) {
   const [note, setNote] = useState({
     title: '',
     content: '',
-    tags: '',
     category: '',
   });
 
-  function handleChange(event) {
+  const handleChange = (event) => {
     const { name, value } = event.target;
 
     setNote((prevNote) => {
@@ -19,18 +18,17 @@ function AddNote(props) {
         [name]: value,
       };
     });
-  }
+  };
 
-  function submitNote(event) {
+  const submitNote = (event) => {
     props.onAdd(note);
     setNote({
       title: '',
       content: '',
-      tags: '',
       category: '',
     });
     event.preventDefault();
-  }
+  };
 
   return (
     <div>
@@ -42,49 +40,54 @@ function AddNote(props) {
           value={note.title}
           placeholder="Title"
         />
+        <div className="select-category">
+          <label>
+            <input
+              type="radio"
+              name="category"
+              onChange={handleChange}
+              className="select-category--button"
+              value="work"
+            ></input>
+            Work
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="category"
+              onChange={handleChange}
+              className="select-category--button"
+              value="school"
+            ></input>
+            School
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="category"
+              onChange={handleChange}
+              className="select-category--button"
+              value="personal"
+            ></input>
+            Personal
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="category"
+              onChange={handleChange}
+              className="select-category--button"
+              value="holiday"
+            ></input>
+            Holiday
+          </label>
+        </div>
         <input
           className="input--content"
           name="content"
           onChange={handleChange}
           value={note.content}
           placeholder="Note Content..."
-        />
-        <div className="select-category">
-          <input
-            type="radio"
-            name="category"
-            onChange={handleChange}
-            className="select-category--button"
-            value="work"
-          ></input>
-          <input
-            type="radio"
-            name="category"
-            onChange={handleChange}
-            className="select-category--button"
-            value="personal"
-          ></input>
-          <input
-            type="radio"
-            name="category"
-            onChange={handleChange}
-            className="select-category--button"
-            value="school"
-          ></input>
-          <input
-            type="radio"
-            name="category"
-            onChange={handleChange}
-            className="select-category--button"
-            value="holiday"
-          ></input>
-        </div>
-        <input
-          className="input--tags"
-          name="tags"
-          onChange={handleChange}
-          value={note.tags}
-          placeholder="#tags"
         />
         <button className="button--add" type="submit">
           <img src={arrow} alt="submit button" className="button--submit" />

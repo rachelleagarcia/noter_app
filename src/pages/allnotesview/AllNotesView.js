@@ -1,24 +1,24 @@
 import React, { useState } from 'react';
-import NoteCard from '../notecard/NoteCard';
-import AddNote from '../addnote/AddNote';
+import NoteCard from '../../components/notecard/NoteCard';
+import AddNote from '../../components/addnote/AddNote';
 import './allnotesview.css';
 
 function AllNotesView() {
   const [notes, setNotes] = useState([]);
 
-  function addNote(newNote) {
+  const addNote = (newNote) => {
     setNotes((prevNotes) => {
       return [...prevNotes, newNote];
     });
-  }
+  };
 
-  function deleteNote(id) {
+  const deleteNote = (id) => {
     setNotes((prevNotes) => {
       return prevNotes.filter((noteItem, index) => {
         return index !== id;
       });
     });
-  }
+  };
 
   return (
     <div className="main-area">
@@ -32,7 +32,6 @@ function AllNotesView() {
               title={noteItem.title}
               content={noteItem.content}
               category={noteItem.category}
-              tags={noteItem.tags}
               onDelete={deleteNote}
             />
           );

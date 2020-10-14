@@ -2,7 +2,7 @@
 --------- Navbar Styles ---------
 --------------------------------*/
 .navbar-area {
-  margin-top: 156px;
+  margin-top: 175px;
   margin-left: 72px;
 }
 
@@ -66,6 +66,15 @@
 
 .holiday-dot {
   background-color: #119da4;
+}
+
+/* Tags  */
+.navbar-item--tags {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #c8c8c8;
+  display: block;
+  margin-top: 16px;
 }
 
 /*-------------------------------
