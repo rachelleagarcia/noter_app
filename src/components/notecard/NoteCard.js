@@ -19,6 +19,7 @@ function NoteCard(props) {
             className="button--completed"
             type="checkbox"
             onClick={handleClick}
+            checked={false}
           ></input>
           <h2 className="note--title">{props.title}</h2>
           <span className="date">{date}</span>

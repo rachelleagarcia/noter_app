@@ -12,6 +12,10 @@ Noter is a project where I created a note-taking application that gives users th
 
 To create a note-taking application built in React that would replicate sticky notes, eliminating paper waste.
 
+### Demo
+
+A working demo of Noter can be found on [Netlify](https://noter-app.netlify.app/).
+
 ### Tools and Technologies
 
 I developed this website using the following tools and technologies:
