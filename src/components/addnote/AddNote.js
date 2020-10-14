@@ -39,6 +39,15 @@ function AddNote(props) {
           onChange={handleChange}
           value={note.title}
           placeholder="Title"
+          required
+        />
+        <input
+          className="input--content"
+          name="content"
+          onChange={handleChange}
+          value={note.content}
+          placeholder="Note Content..."
+          required
         />
         <div className="select-category">
           <label>
@@ -86,13 +95,6 @@ function AddNote(props) {
             Holiday
           </label>
         </div>
-        <input
-          className="input--content"
-          name="content"
-          onChange={handleChange}
-          value={note.content}
-          placeholder="Note Content..."
-        />
         <button className="button--add" type="submit">
           <img src={arrow} alt="submit button" className="button--submit" />
         </button>

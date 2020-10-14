@@ -15,4 +15,5 @@
 --------------------------------*/
 .note-area {
   display: flex;
+  flex-flow: row wrap;
 }
