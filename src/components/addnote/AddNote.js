@@ -46,6 +46,7 @@ function AddNote(props) {
               type="radio"
               name="category"
               onChange={handleChange}
+              checked={note.category === 'work'}
               className="select-category--button"
               value="work"
             ></input>
@@ -56,6 +57,7 @@ function AddNote(props) {
               type="radio"
               name="category"
               onChange={handleChange}
+              checked={note.category === 'school'}
               className="select-category--button"
               value="school"
             ></input>
@@ -66,6 +68,7 @@ function AddNote(props) {
               type="radio"
               name="category"
               onChange={handleChange}
+              checked={note.category === 'personal'}
               className="select-category--button"
               value="personal"
             ></input>
@@ -76,6 +79,7 @@ function AddNote(props) {
               type="radio"
               name="category"
               onChange={handleChange}
+              checked={note.category === 'holiday'}
               className="select-category--button"
               value="holiday"
             ></input>
