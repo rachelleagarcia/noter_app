@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import NoteCard from '../components/NoteCard/NoteCard';
-import AddNote from '../components/addnote/AddNote';
+import AddNote from '../components/AddNote/AddNote';
 import './Home.css';
 
 function AllNotesView() {
