@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Header from './components/header/Header';
-import AllNotesView from './pages/allnotesview/AllNotesView';
+import Header from './components/Header/Header';
+import AllNotesView from './pages/Home';
 
 function App() {
   return (

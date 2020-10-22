@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import NoteCard from '../../components/notecard/NoteCard';
-import AddNote from '../../components/addnote/AddNote';
-import './allnotesview.css';
+import NoteCard from '../components/NoteCard/NoteCard';
+import AddNote from '../components/addnote/AddNote';
+import './Home.css';
 
 function AllNotesView() {
   const [notes, setNotes] = useState([]);

@@ -1,7 +1,7 @@
 import React from 'react';
 import moment from 'moment';
 import icon from './images/time.png';
-import './notecard.css';
+import './NoteCard.css';
 
 function NoteCard(props) {
   let date = moment().format('MMMM Do, YYYY');

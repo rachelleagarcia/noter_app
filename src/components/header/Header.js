@@ -1,7 +1,7 @@
 import React from 'react';
-import Navbar from '../navbar/Navbar';
+import Navbar from '../Navbar/Navbar';
 import logo from './images/logo.png';
-import './header.css';
+import './Header.css';
 
 function Header() {
   return (

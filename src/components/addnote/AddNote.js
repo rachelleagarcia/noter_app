@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import arrow from './images/right-arrow.png';
-import './addnote.css';
+import './AddNote.css';
 
 function AddNote(props) {
   const [note, setNote] = useState({
