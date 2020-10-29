@@ -7,9 +7,9 @@ function NoteCard(props) {
   let date = moment().format('MMMM Do, YYYY');
   let time = moment.duration().days();
 
-  function handleClick() {
+  const handleClick = () => {
     props.onDelete(props.id);
-  }
+  };
 
   return (
     <div className="note-card">
