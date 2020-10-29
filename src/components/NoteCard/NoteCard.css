@@ -1,0 +1,107 @@
+/*-------------------------------
+------------ Note Card ----------
+--------------------------------*/
+.note-card {
+  position: relative;
+  background: #fefefe;
+  width: 257px;
+  height: 226px;
+  border-radius: 30px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.05);
+  margin: 0 20px 20px 0;
+}
+
+/*-------------------------------
+----------- Note Header ---------
+--------------------------------*/
+.note-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.note--title {
+  font-size: 1rem;
+  margin: 0;
+  margin-left: 16px;
+}
+
+.date {
+  font-size: 0.8rem;
+  color: #9b9b9b;
+  width: 200px;
+  margin-left: 29px;
+}
+
+/*-------------------------------
+---------- Note Content ---------
+--------------------------------*/
+.note-content {
+  position: relative;
+  padding: 24px;
+  height: 100%;
+}
+
+.note-content--text {
+  display: flex;
+  margin-top: 40px;
+  margin-left: 30px;
+}
+
+.note-content--category {
+  position: absolute;
+  width: 74px;
+  height: 8px;
+  right: 0;
+}
+
+.note-content--tags {
+  position: absolute;
+  font-size: 0.75rem;
+  color: #898989;
+  bottom: 70px;
+  left: 24px;
+}
+
+.note-content-time {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  font-size: 0.75rem;
+  background-color: #e7e7e7;
+  border: 1px solid #c4c4c4;
+  border-radius: 40px;
+  bottom: 65px;
+  right: 24px;
+  padding: 4px 10px 4px 8px;
+}
+
+.icon--time {
+  display: inline;
+  margin-right: 4px;
+}
+
+/* Category Colors */
+.note--work {
+  background-color: #c1292e;
+}
+
+.note--school {
+  background-color: #f9a03f;
+}
+
+.note--personal {
+  background-color: #5b5f97;
+}
+
+.note--holiday {
+  background-color: #119da4;
+}
+
+/*-------------------------------
+---- Completed Button Styles -----
+--------------------------------*/
+.button--completed {
+  transform: scale(1.2);
+}

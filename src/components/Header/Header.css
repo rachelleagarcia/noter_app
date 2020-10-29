@@ -1,0 +1,32 @@
+/*-------------------------------
+---------- Main Header ----------
+--------------------------------*/
+header {
+  position: fixed;
+  background: #334e7a;
+  width: 237px;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  margin-left: 32px;
+  padding-top: 32px;
+}
+
+/*-------------------------------
+---------- Logo Styles ----------
+--------------------------------*/
+.logo--img {
+  margin-right: 16px;
+  width: 24px;
+  height: 24px;
+}
+
+.logo--name {
+  font-size: 0.85rem;
+  color: #e2e2e2;
+}

@@ -1,0 +1,19 @@
+/*-------------------------------
+--------- Add Note Area ---------
+--------------------------------*/
+.main-area {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 310px);
+  margin-left: 237px;
+  padding: 44px;
+}
+
+/*-------------------------------
+----------- Note Area -----------
+--------------------------------*/
+.note-area {
+  display: flex;
+  flex-flow: row wrap;
+}
