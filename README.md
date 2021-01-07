@@ -20,8 +20,5 @@ A working demo of Noter can be found on [Netlify](https://noter-app.netlify.app/
 
 I developed this website using the following tools and technologies:
 
-- React.js
-- Node.js
-- JavaScript
-- HTML5
+- React
 - CSS3
